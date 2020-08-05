@@ -5,6 +5,22 @@
 .container {
   max-width: 1140px;
 }
+.btns_block {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  background-color: #c2c2c2;
+  border-radius: 3px;
+  width: 90px;
+  height: 40px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.main_button {
+  background-color: #00aeef;
+  margin-right: 9px;
+}
 .header_top {
   border-bottom: 2px solid #e2e2e2;
   padding: 20px 0px;
@@ -13,6 +29,7 @@
   padding: 0px;
 }
 .header_top .row_header_top .top_left {
+  display: flex;
   padding: 0px;
 }
 .header_top .row_header_top .top_left img {
@@ -92,40 +109,98 @@
   display: flex;
   justify-content: flex-end;
 }
-.header_menu .row_header_menu .menu_btns_block .btns_block {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  background-color: #c2c2c2;
-  border-radius: 3px;
-  width: 90px;
-  height: 40px;
-  text-decoration: none;
+.job_search {
+  background-color: #213638;
+  background: linear-gradient(to right, #1e363c, #2d3829);
+  padding: 210px 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14.58px;
 }
-.header_menu .row_header_menu .menu_btns_block .btns_block span {
+.job_search .section_header {
+  text-align: center;
   color: #ffffff;
 }
-.header_menu .row_header_menu .menu_btns_block .login {
-  background-color: #00aeef;
-  margin-right: 9px;
-}
-.main {
-  background-color: #213638;
-  height: 1000px;
-  padding: 210px 0px;
-}
-.main h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 41, 67px;
+.job_search .section_header h1 {
+  font-size: 42px;
   font-weight: 900;
   text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
+  margin-bottom: 30px;
 }
-.main p {
+.job_search .section_header p {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.job_search .job_search_form {
+  display: flex;
+  justify-content: center;
+}
+.job_search .job_search_form form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 3px;
+  height: 100px;
+  width: 80%;
+}
+.job_search .job_search_form form *:not(:last-child) {
+  background-color: #eeeeee;
+  width: 220px;
+  height: 50px;
+  border-radius: 1px;
+  border: none;
+  font-style: italic;
+  font-weight: 300;
+  color: #666666;
+  padding-left: 15px;
+  -webkit-appearance: none;
+}
+.job_search .job_search_form form :last-child {
+  height: 50px;
+  width: 130px;
+}
+.job_search .job_search_form form *:focus,
+.job_search .job_search_form form :active {
+  outline: none;
+}
+.our_process {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14, 58px;
+  color: #202020;
+  line-height: 33.33px;
+  padding: 100px 0px;
+}
+.our_process p {
+  font-size: 12.5px;
+  color: #666666;
+}
+.our_process .section_header {
+  margin: 0 auto;
+  max-width: 55%;
   text-align: center;
-  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+.our_process .section_header h3 {
+  font-size: 16.67px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.our_process .section_header h2 {
+  font-weight: 800;
+  font-size: 29.17px;
+  margin-bottom: 11px;
+}
+.our_process .section_header p {
+  text-transform: none;
+}
+.our_process .blocks .one_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.our_process .blocks .one_block h2 {
+  font-size: 20.83px;
+  font-weight: 400;
 }

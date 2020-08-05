@@ -6,6 +6,22 @@
 .container {
   max-width: 1140px;
 }
+.btns_block {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  background-color: #c2c2c2;
+  border-radius: 3px;
+  width: 90px;
+  height: 40px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.main_button {
+  background-color: #00aeef;
+  margin-right: 9px;
+}
 
 .header_top {
   border-bottom: 2px solid #e2e2e2;
@@ -13,6 +29,7 @@
   .row_header_top {
     padding: 0px;
     .top_left {
+      display: flex;
       padding: 0px;
       img {
         margin-right: 10px;
@@ -94,44 +111,108 @@
       padding: 0px;
       display: flex;
       justify-content: flex-end;
-      .btns_block {
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        align-items: center;
-        background-color: #c2c2c2;
-        border-radius: 3px;
-        width: 90px;
-        height: 40px;
-        text-decoration: none;
-        span {
-          color: #ffffff;
-        }
+    }
+  }
+}
+
+.job_search {
+  background-color: #213638;
+  background: linear-gradient(to right, #1e363c, #2d3829);
+  padding: 210px 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14.58px;
+
+  .section_header {
+    text-align: center;
+    color: #ffffff;
+    h1 {
+      font-size: 42px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    p {
+      // font-size: 14.58px;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+  .job_search_form {
+    display: flex;
+    justify-content: center;
+    form {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #ffffff;
+      border-radius: 3px;
+      height: 100px;
+      width: 80%;
+      *:not(:last-child) {
+        background-color: #eeeeee;
+        width: 220px;
+        height: 50px;
+        border-radius: 1px;
+        border: none;
+        // font-size: 14.58px;
+        font-style: italic;
+        font-weight: 300;
+        color: #666666;
+        padding-left: 15px;
+        -webkit-appearance: none;
       }
-      .login {
-        background-color: #00aeef;
-        margin-right: 9px;
+      :last-child {
+        height: 50px;
+        width: 130px;
+      }
+      *:focus,
+      :active {
+        outline: none;
       }
     }
   }
 }
 
-.main {
-  background-color: #213638;
-  height: 1000px;
-  padding: 210px 0px;
-  h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 41, 67px;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ffffff;
-  }
+.our_process {
+  font-family: 'Open Sans', sans-serif;
+  color: #202020;
+  line-height: 33.33px;
+  padding: 100px 0px;
   p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14, 58px;
+    font-size: 12.5px;
+    color: #666666;
+  }
+  .section_header {
+    margin: 0 auto;
+    max-width: 55%;
     text-align: center;
-    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 39px;
+    h3 {
+      font-size: 16.67px;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
+    h2 {
+      font-weight: 800;
+      font-size: 29.17px;
+      margin-bottom: 11px;
+    }
+    p {
+      text-transform: none;
+    }
+  }
+  .blocks {
+    .one_block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h2 {
+        font-size: 20.83px;
+        font-weight: 400;
+      }
+    }
   }
 }

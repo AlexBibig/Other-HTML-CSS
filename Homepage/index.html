@@ -9,20 +9,26 @@
     />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media/media.css">
     <title>Document</title>
   </head>
+
   <body>
     <div class="container_fluid">
       <header class="header_top">
         <div class="container">
           <div class="row row_header_top">
-            <div class="col-lg-5 col-12 top_left">
-              <img src="./img/phone.png" alt="phone" />
-              <p>+0123 456 789</p>
-              <img src="./img/email.png" alt="email" />
-              <p>hello@address.com</p>
+            <div class="col-md-5 col-12 top_left">
+              <div>              
+                <img src="./img/phone.png" alt="phone" />
+                <p>+0123 456 789</p>
+              </div>
+              <div>
+                <img src="./img/email.png" alt="email" />
+                <p>hello@address.com</p>
+              </div>
             </div>
-            <div class="col-lg col-12 top_right">
+            <div class="col-md col-12 top_right">
               <a class="sprite sprite-facebook" href="#"></a>
               <a class="sprite sprite-twitter" href="#"></a>
               <a class="sprite sprite-tumblr" href="#"></a>
@@ -55,23 +61,72 @@
               </nav>
             </div>
             <div class="col-lg-3 col-12 menu_btns_block">
-              <a class="button btns_block login" href="#"><span>Login</span></a>
-              <a class="button btns_block" href="#"><span>Sign Up</span></a>
+              <a class="button btns_block main_button" href="#">Login</a>
+              <a class="button btns_block" href="#">Sign Up</a>
             </div>
           </div>
         </div>
       </header>
 
-      <div class="main">
+      <section class="job_search">
         <div class="container">
-          <h1>Job Searching Just Got So Easy</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-          </p>
-          <form action="input"></form>
+          <div class="section_header">
+            <h1>Job Searching Just Got So Easy</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip.
+            </p>
+          </div>
+
+          <div class="job_search_form">
+            <form action="">
+              <input id="keyword" type="text" placeholder="Job Key Word"></input>
+              
+                <select>
+                  <option>New York, NY</option>
+                  <option>Los Angeles, CA</option>
+                </select>
+              
+              
+                <select>
+                  <option>Grapihc Design</option>
+                  <option>Front-End Developer</option>
+                </select>
+              
+              <input class="btns_block main_button" type="submit" value="Search">
+            </form>
+          </div>
+
         </div>
-      </div>
+      </section>
+
+      <section class="our_process">
+        <div class="container">
+          <div class="section_header">
+            <h3>Our process</h3>
+            <h2>How we work for you?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam exercitationem debitis sequi illo soluta eum voluptates rerum ducimus iusto.</p>
+          </div>
+          <div class="blocks row">
+            <div class="one_block col-md-4 col-12">
+              <img src="./img/our_process_first_img.png" alt="icon">
+              <h2>Searching for the best job</h2>
+              <p>Using the outcomes from the job, we will put together a plan for the most effective marketing strategy to get the best results.</p>
+            </div>
+            <div class="one_block col-md-4 col-12">
+              <img src="./img/our_process_second_img.png" alt="icon">
+              <h2>Create Your Resume</h2>
+              <p>Using the outcomes from the job, we will put together a plan for the most effective marketing strategy to get the best results.</p>
+            </div>
+            <div class="one_block col-md-4 col-12">
+              <img src="./img/our_process_third_img.png" alt="icon">
+              <h2>Face Interview Online</h2>
+              <p>Using the outcomes from the job, we will put together a plan for the most effective marketing strategy to get the best results.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
